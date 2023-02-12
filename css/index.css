@@ -1,0 +1,180 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 90%;
+  margin: 4em auto;
+}
+
+.main {
+  background-color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 2em 0;
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.main .information {
+  max-width: 400px;
+}
+.main .information .data {
+  text-align: center;
+}
+.main .information .data h1 {
+  font-size: 3.8rem;
+  line-height: 1;
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+}
+.main .information .data p {
+  font-size: 1.7rem;
+  margin: 2em 0;
+  color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
+}
+.main .information .review .review__container {
+  margin-bottom: 1.5em;
+  background-color: hsl(300deg, 24%, 96%);
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.main .information .review .review__container .review__stars {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+.main .information .review .review__container p {
+  text-align: center;
+  font-weight: 700;
+  color: hsl(300deg, 43%, 22%);
+  font-size: 1.7rem;
+}
+.main .cards .card {
+  max-width: 400px;
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 0.5em;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.main .cards .card .card__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+}
+.main .cards .card .card__container img {
+  width: 3.5em;
+  border-radius: 50%;
+}
+.main .cards .card .card__container .card__data .card__name {
+  font-size: 1.7rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.main .cards .card .card__container .card__data .card__verified {
+  color: rgba(238, 104, 164, 0.7);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.main .cards .card .card__paragraph {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.main .attribution {
+  position: absolute;
+  bottom: 0.3em;
+  right: 0.3em;
+  text-align: end;
+  line-height: 1.1;
+  font-size: 1.3rem;
+  color: hsl(303deg, 10%, 53%);
+}
+.main .attribution a {
+  text-decoration: none;
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .main .information {
+    max-width: 400px;
+  }
+  .main .information .data {
+    text-align: center;
+  }
+  .main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+  }
+  .main .cards .card {
+    margin-bottom: 0;
+    position: relative;
+  }
+  .main .cards .card .card__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .main .cards .card__two {
+    top: 1.5em;
+  }
+  .main .cards .card__three {
+    top: 2.5em;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main .information {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .information .data {
+    max-width: 30em;
+    text-align: start;
+  }
+  .main .information .review .review__container {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+  }
+  .main .information .review .review__container .review__stars {
+    margin-bottom: 0;
+  }
+  .main .information .review .review__two {
+    left: 1.5em;
+  }
+  .main .information .review .review__three {
+    left: 2.5em;
+  }
+  .main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+  }
+}
+@media screen and (min-width: 950px) {
+  .main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    gap: 2em;
+  }
+}/*# sourceMappingURL=index.css.map */

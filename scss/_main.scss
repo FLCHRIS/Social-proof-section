@@ -1,0 +1,185 @@
+.main {
+    background-color: $White;
+    font-size: 1.5rem;
+    padding: 2em 0;
+    font-family: $fontLeagueSpartan;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    .information {
+        max-width: 400px;
+        .data {
+            text-align: center;
+            h1 {
+                font-size: 3.8rem;
+                line-height: 1;
+                color: $VeryDarkMagenta;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1.7rem;
+                margin: 2em 0;
+                color: $DarkGrayishMagenta;
+                font-weight: 500;
+            }
+        }
+        .review {
+            .review__container {
+                margin-bottom: 1.5em;
+                background-color: $LightGrayishMagenta;
+                border-radius: .5em;
+                padding: 1em;
+                .review__stars {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 1em;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .2em;
+                }
+                p {
+                    text-align: center;
+                    font-weight: 700;
+                    color: $VeryDarkMagenta;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+    .cards {
+        .card {
+            max-width: 400px;
+            background-color: $VeryDarkMagenta;
+            border-radius: .5em;
+            padding: 2em;
+            margin-bottom: 2em;
+            .card__container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1.5em;
+                img {
+                    width: 3.5em;
+                    border-radius: 50%;
+                }
+                .card__data {
+                    .card__name {
+                        font-size: 1.7rem;
+                        color: $White;
+                        font-weight: 700;
+                    }
+                    .card__verified {
+                        color: rgba($SoftPink, .7);
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .card__paragraph {
+                margin-top: 1em;
+                font-size: 1.6rem;
+                color: $White;
+            }
+        }
+    }
+    .attribution {
+        position: absolute;
+        bottom: .3em;
+        right: .3em;
+        text-align: end;
+        line-height: 1.1;
+        font-size: 1.3rem;
+        color: $DarkGrayishMagenta;
+        a {
+            text-decoration: none;
+            color: $VeryDarkMagenta;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .main {
+        .information {
+            max-width: 400px;
+            .data {
+                text-align: center;
+            }
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2em;
+            .card {
+                margin-bottom: 0;
+                position: relative;
+                .card__container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1.5em;
+                }
+            }
+            .card__two {
+                top: 1.5em;
+            }
+            .card__three {
+                top: 2.5em;
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px){
+    .main {
+        .information {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            align-items: center;
+            justify-content: center;
+            .data {
+                max-width: 30em;
+                text-align: start;
+            }
+            .review {
+                .review__container {
+                    max-width: 30em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1em;
+                    position: relative;
+                    .review__stars {
+                        margin-bottom: 0;
+                    }
+                }
+                .review__two {
+                    left: 1.5em;
+                }
+                .review__three {
+                    left: 2.5em;
+                }
+            }
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2em;
+        }
+    }
+}
+@media screen and (min-width: 950px){
+    .main {
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: none;
+            gap: 2em;
+        }
+    }
+}

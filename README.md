@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-kd4dfR9EOF)
+- [Live site URL](https://iridescent-nougat-242dbf.netlify.app/)
 
 ## My process
 
